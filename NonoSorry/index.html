@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        html, body { height: 100%; margin: 0; }
+        .hero {
+            height: 100vh;
+            background-image: url('img/nono1.jpg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-scale { transition: transform 150ms ease; }
+        .btn-group { gap: 1rem; }
+        .btn-wrap { display: flex; align-items: center; justify-content: center; transition: width 150ms ease; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid hero">
+        <div class="btn-group" role="group" aria-label="actions">
+            <div class="btn-wrap">
+                <button id="btn-hehao" class="btn btn-success btn-scale">和好</button>
+            </div>
+            <div class="btn-wrap">
+                <button id="btn-buyao" class="btn btn-danger btn-scale">不要</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/behavior.js"></script>
+</body>
+</html>
